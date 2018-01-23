@@ -4,31 +4,36 @@
 <Category>HomeAutomation:</Category>
   <Name>homebridge</Name>
   <Description>
-  Homebridge
+  Homebridge for unRaid
   </Description>
   <Overview>
-  Homebridge
+  Homebridge (https://github.com/nfarina/homebridge) for unRaid
   </Overview>
-  <Support></Support>
+  <Support>https://github.com/knutola/dockerapp-homebridge</Support>
   <Registry></Registry>
-  <GitHub></GitHub>
-  <Repository>knutola/homebridge</Repository>
+  <GitHub>https://github.com/knutola/dockerapp-homebridge</GitHub>
+  <Repository>knutola/dockerapp-homebridge</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
     <Mode>host</Mode>
     <Publish>	  	  
+	  <Port>
+        <HostPort>51826</HostPort>
+        <ContainerPort>51826</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Environment></Environment>    
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/homebridge</HostDir>
-      <ContainerDir>/root/config/</ContainerDir>
+      <ContainerDir>/config/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon></Icon>
+  <Icon>https://raw.githubusercontent.com/knutola/docker-templates/master/knutola/icons/homekit.png</Icon>
 </Containers>
