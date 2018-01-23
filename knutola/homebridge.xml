@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>HomeAutomation:</Category>
+  <Name>homebridge</Name>
+  <Description>
+  Homebridge
+  </Description>
+  <Overview>
+  Homebridge
+  </Overview>
+  <Support></Support>
+  <Registry></Registry>
+  <GitHub></GitHub>
+  <Repository>knutola/homebridge</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>host</Mode>
+    <Publish>	  	  
+    </Publish>
+  </Networking>
+  <Environment></Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/homebridge</HostDir>
+      <ContainerDir>/root/config/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+</Containers>
